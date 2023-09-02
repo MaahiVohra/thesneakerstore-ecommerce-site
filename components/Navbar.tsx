@@ -18,6 +18,9 @@ const Navbar: FC = () => {
 						height={50}
 						width={175}
 						alt="Logo"
+						style={{
+							cursor: "pointer",
+						}}
 					/>
 				</Link>
 			</p>
@@ -30,12 +33,7 @@ const Navbar: FC = () => {
 					<span className="cart-item-qty">{totalQuantities}</span>
 				</button>
 				{!isSignedIn ? (
-					<button
-						style={{
-							padding: "0.5rem",
-							border: "1px solid black",
-							borderRadius: "0.5rem",
-						}}>
+					<button type="button" className="signin-btn">
 						<a href="/sign-in">Sign In</a>
 					</button>
 				) : (
