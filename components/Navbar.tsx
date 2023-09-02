@@ -34,7 +34,7 @@ const Navbar: FC = () => {
 				</button>
 				{!isSignedIn ? (
 					<button type="button" className="signin-btn">
-						<a href="/sign-in">Sign In</a>
+						<a href="/sign-in">Login</a>
 					</button>
 				) : (
 					<UserButton afterSignOutUrl="/" />
