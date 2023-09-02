@@ -12,20 +12,14 @@ const Navbar: FC = () => {
 	return (
 		<div className="navbar-container">
 			<p className="logo">
-				<a
-					href="/"
-					style={{
-						display: "flex",
-						alignItems: "center",
-					}}>
+				<Link href="/">
 					<Image
 						src={"/logo.png"}
 						height={50}
-						width={55}
+						width={175}
 						alt="Logo"
 					/>
-					TheSneakerStore
-				</a>
+				</Link>
 			</p>
 			<div className="navbar-right-container">
 				<button
